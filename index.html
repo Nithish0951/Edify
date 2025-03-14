@@ -3,75 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🔥 Video Editing Portfolio 🔥</title>
-    <link rel="stylesheet" href="color.css">
+    <title>Dark Vortex - Video Editing Services</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
+
     <header>
-        <h1>Nithish Chowdhary</h1>
-        <p>High-Quality Video Editing | Beat Sync | Motion Graphics</p>
+        <h1>Dark Vortex Edits</h1>
+        <p>Professional Video Editing Services</p>
     </header>
 
-    <!-- About Section -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#videos">Samples</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <section id="about">
-        <h2>📝 About Me</h2>
-        <p>I am a skilled video editor specializing in <b>beat sync, cinematic edits, vlog editing</b>, and more. Contact for any Video Editing Services. Let's create something stunning! 🚀</p>
+        <h2>About Me</h2>
+        <p>Welcome to Dark Vortex Edits! I specialize in **high-quality video editing** for YouTube, Instagram, and more. Whether you need **beat sync edits, cinematic storytelling, or color grading**, I’ve got you covered!</p>
     </section>
 
-    <!-- Services Section -->
     <section id="services">
-        <h2>💡 My Services</h2>
-        <div class="service">
-            <h3> Beat Sync Editing</h3>
-            <p>High-energy edits that sync perfectly with the music.</p>
+        <h2>Services</h2>
+        <ul>
+            <li>🔥 Beat Sync Edits</li>
+            <li>🎬 Cinematic Video Editing</li>
+            <li>✨ Color Grading & Effects</li>
+            <li>🎵 Music Video Editing</li>
+            <li>📹 Vlog & Travel Video Edits</li>
+        </ul>
+    </section>
+
+    <section id="pricing">
+        <h2>Pricing</h2>
+        <p>Affordable rates for top-quality edits! Contact me for custom pricing.</p>
+        <div class="pricing-box">
+            <h3>Basic</h3>
+            <p>₹500 - Short edits (30 sec - 1 min)</p>
         </div>
-        <div class="service">
-            <h3> Vlog Editing</h3>
-            <p>Smooth and engaging vlog edits with pro-level color grading.</p>
+        <div class="pricing-box">
+            <h3>Pro</h3>
+            <p>₹1500 - Full video editing (up to 5 min)</p>
         </div>
-        <div class="service">
-            <h3> Short Videos</h3>
-            <p>Engaging Short Videos or Reels in Professional manner</p>
+        <div class="pricing-box">
+            <h3>Premium</h3>
+            <p>₹3000+ - High-end cinematic & long-form videos</p>
         </div>
     </section>
 
-    <!-- Video Samples -->
     <section id="videos">
-        <h2>🎥 Sample Edits</h2>
-
+        <h2>Sample Videos</h2>
         <div class="video-section">
-            <h3>⚡ Beat Sync Sample</h3>
-            <video controls autoplay>
-                <source src="beat-sync.mp4" type="video/mp4">
+            <h3>🔥 Beat Sync Edits</h3>
+            <video controls>
+                <source src="beatsync.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
 
         <div class="video-section">
-            <h3>🎬 Cinematic Edit Sample</h3>
-            <video controls autoplay>
-                <source src="cinematic-edit.mp4" type="video/mp4">
+            <h3>🎬 Sample Edits</h3>
+            <video controls>
+                <source src="sampleedit.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <section id="testimonials">
+        <h2>What Clients Say</h2>
+        <blockquote>"Dark Vortex's editing is next level! 🔥 My videos have never looked better!" - Client A</blockquote>
+        <blockquote>"Super fast delivery & amazing quality. Worth every penny!" - Client B</blockquote>
+    </section>
+
     <section id="contact">
-        <h2>📩 Contact Me</h2>
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
+        <h2>Get in Touch</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
-        <p id="response"></p>
     </section>
 
     <footer>
-        <p>🔥 Created by Dark Vortex | © 2025</p>
+        <p>© 2025 Dark Vortex Edits | All Rights Reserved</p>
     </footer>
 
-    <script src="brain.js"></script>
 </body>
 </html>
