@@ -1,33 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const videoSections = document.querySelectorAll(".video-section");
+    const videos = document.querySelectorAll("video");
 
-    function fadeInOnScroll() {
-        videoSections.forEach((section) => {
-            const rect = section.getBoundingClientRect();
-            if (rect.top < window.innerHeight * 0.8) {
-                section.classList.add("visible");
-            }
+    videos.forEach(video => {
+        video.addEventListener("mouseenter", () => {
+            video.play();
         });
-    }
 
-    function autoPlayVideos() {
-        document.querySelectorAll("video").forEach((video) => {
-            const rect = video.getBoundingClientRect();
-            if (rect.top < window.innerHeight && rect.bottom > 0) {
-                video.play();
-            } else {
-                video.pause();
-            }
+        video.addEventListener("mouseleave", () => {
+            video.pause();
+            video.currentTime = 0;
         });
-    }
-
-    window.addEventListener("scroll", fadeInOnScroll);
-    window.addEventListener("scroll", autoPlayVideos);
-    fadeInOnScroll(); 
-
-    // Handle Contact Form Submission
-    document.getElementById("contactForm").addEventListener("submit", function (event) {
-        event.preventDefault();
-        document.getElementById("response").innerText = "✅ Message Sent! I'll get back to you soon.";
     });
 });
