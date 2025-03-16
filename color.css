@@ -48,6 +48,15 @@ video {
     width: 100%;
     border-radius: 10px;
 }
+#portfolio {
+    background: #121212;
+    padding: 40px;
+    text-align: center;
+}
+
+#portfolio h2 {
+    color: #ff004f;
+}
 
 .pricing-box {
     display: inline-block;
